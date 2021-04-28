@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px;
+  background-color: #3b6163;
+}
+
+.contenedor-padre{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p{
+  font-size: 25px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #dfdede;
+}
+
+.contenedor-formulario{
+  background-color: #afc2df;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 80%;
+  height: 80px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-contenido{
+  background-color: #afc2df;
+  border-radius: 10px;
+  width: 80%;
+  height: auto;
+  text-align: center;
+}
+
+form{
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+input{
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  outline: 0 none;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 60%;
+  height: 40px;
+}
+
+button{
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #3b6163;
+  border: none;
+  margin-left: 10px;
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.titulo-gif{
+  text-align: center;
+  padding: 10px;
+}
+
+.loadin{
+  width: 200px;
+  height: 200px;
+}
+
+.GifImg{
+  width: 120px;
+  height: 120px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  border: 1px #686767 solid;
+}
