@@ -1,6 +1,6 @@
 const dataGif = async ( submits ) => {
           
-     const url = `https://api.giphy.com/v1/gifs/search?q=${ encodeURI( submits ) }&limit=14&api_key=6zht4GLlcs4rDP4dttX29Xbox7zgGTcI`
+     const url = `https://api.giphy.com/v1/gifs/search?q=${ encodeURI( submits ) }&limit=200&api_key=6zht4GLlcs4rDP4dttX29Xbox7zgGTcI`
 
      const resp = await fetch(url)
      const { data } = await resp.json()
@@ -14,7 +14,6 @@ const dataGif = async ( submits ) => {
      })
 
      return gif 
-
 }
 
 export default dataGif

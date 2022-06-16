@@ -14,11 +14,13 @@ const AppAgregar = () => {
           e.preventDefault()
 
           if(input.length > 1){
-
-               setSubmit([input, ...submit])
+               setSubmit([input]) //si queremos tener todos los datos que buscamos. setSubmit([input, ...submit])
                setInput('')
-               
           }
+     }
+
+     const handleClean = () => {
+          setSubmit([])
      }
 
      return (
@@ -31,6 +33,7 @@ const AppAgregar = () => {
                               onChange={ handleInput }
                          />
                          <button>Buscar</button>
+                         <button onClick={handleClean}>Limpiar</button>
                     </form>
                </div>
 
@@ -38,11 +41,11 @@ const AppAgregar = () => {
                     {
                          submit.map( submits => (
                               <AppContenido 
-                                    key={ submits  }
+                                   key={ submits  }
                                    submits={ submits }
                               />
-                              ))
-                         }
+                         ))
+                    }
                               
                </div>
           </>

@@ -1,5 +1,5 @@
 import React from 'react'
-import AppAgregar from './component/AppAgregar'
+import AppAgregar from './components/AppAgregar'
 
 const GifApp = () => {
   return (

@@ -79,6 +79,7 @@ button{
 .titulo-gif{
   text-align: center;
   padding: 10px;
+  text-transform: capitalize; /*Coloca la primera letra en mayuscula*/
 }
 
 .loadin{

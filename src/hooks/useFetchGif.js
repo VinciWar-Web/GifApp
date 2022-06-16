@@ -4,28 +4,20 @@ import dataGif from "../helpers/dataGif"
 const useFetchGif = ( submits ) => {
 
      const [estado, setEstado] = useState({
-
-          data: [],
+          image: [],
           caragndo: true   
      })
 
      useEffect( () => {
-
           dataGif( submits )
                .then( img => {
-
-                    setTimeout( () => {
-
-                         setEstado({
-                     
-                              data: img,
-                              cargando: false
-                         })
-
-                    }, 1500)
+                    setEstado({
+                         image: img,
+                         cargando: false
+                    })
                })
-
      },[submits])
+
 
      return estado
 }
